@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<head lang="CN">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>我的挖掘机</title>
+
+    <!-- Bootstrap -->
+
+    <link href="bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/animate.min.css"/>
+    <link rel="stylesheet" href="css/index_01.css"/>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+
+    <script src="bootcss/cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="bootcss/cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <!--<![endif]&ndash;&gt;-->
+</head>
+<body>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="bootcss/cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src="js/jquery.singlePageNav.js"></script>
+<script src="jq/wow_js/js/wow.js"></script>
+<script>
+    $(function(){
+        //获取nav节点
+        $('nav').singlePageNav({
+            offset:70
+        });
+        //初始化动画组件
+        new WOW().init();
+    });
+
+</script>
+<!--导航条-->
+<nav class="navbar navbar-default navbar-fixed-top"> <!--navbar-fixed-top固定宽度-->
+    <!--响应式容器-->
+    <div class="container">
+        <!--导航条头部 包含折叠按钮,logo-->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-right" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">小狼学院</a>
+        </div>
+        <!--右边-->
+        <div class="collapse navbar-collapse" id="nav-right">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="#contact">联系我们</a></li>
+                <li><a href="#h5">关于我们</a></li>
+                <li><a href="#kecheng">点我有惊喜</a></li>
+                <li><a href="#footer">论坛</a></li>
+                <li><a href="houtai.html">后台页面</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!--banner-->
+<section id="banner" class="wow bounceInDown" data-wow-duratuon="1s" >
+    <!--蒙版层-->
+    <div class="mengban ">
+        <div class="container ptm-70" >
+            <div class="col-md-1"></div>
+            <div class="col-md-10 ">
+                <a href="#"><h1>浩哥家的挖狼技术</h1></a>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus assumenda cum debitis dolor dolorem ex facere nostrum optio sapiente sequi.</p>
+                <img src="boot-img/spring.jpg" class="img-responsive" alt=""/>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+    </div>
+</section>
+
+<!--banner2-->
+<section id="conner">
+    <div class="container text-center">
+        <div class="col-md-4 wow flipInX" >
+            <img src="boot-img/icon1.jpg" alt="" />
+            <h2>web img</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, expedita!</p>
+        </div>
+        <div class="col-md-4 wow flipInX ">
+            <img src="boot-img/icon2.jpg" alt=""/>
+            <h2>web img</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, recusandae.</p>
+        </div>
+        <div class="col-md-4 wow flipInX" >
+            <img src="boot-img/icon3.jpg" alt=""/>
+            <h2>web img</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident, vitae?</p>
+        </div>
+    </div>
+</section>
+
+<!--第三版section-->
+<section id="h5" class="bg-barek">
+    <div class="container ptm-70 wow fadeInLeft">
+        <div class="col-md-6">
+            <h2 class="wow rollIn" data-wow-duratuon="10s">HTML5开发</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto culpa dolorum, earum minus nam natus.</p>
+            <p><span class="glyphicon glyphicon-cloud"></span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, eos?</p>
+            <p><span class="glyphicon glyphicon-cloud"></span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, eos?</p>
+        </div>
+        <div class="col-md-6">
+            <img src="boot-img/boot.jpg" alt=""/>
+        </div>
+    </div>
+</section>
+
+<!--第四版-->
+<section id="h5-2" class=" ptm-70 wow fadeInRight">
+    <div class="container ptm-70">
+        <div class="col-md-6 wow ">
+            <img src="boot-img/boot.jpg" alt=""/>
+        </div>
+        <div class="col-md-6">
+            <h2>HTML5开发</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto culpa dolorum, earum minus nam natus.</p>
+            <p><span class="glyphicon glyphicon-cloud"></span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, eos?</p>
+            <p><span class="glyphicon glyphicon-cloud"></span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, eos?</p>
+        </div>
+    </div>
+</section>
+<!--第五版-->
+<section id="kecheng" class="ptm-70 bg-barek text-center">
+    <h1>最新课程</h1>
+    <div class="container ptm-top">
+        <div class="col-md-3 col-sm-6">
+            <div class="thumbnail">
+                <img src="boot-img/jquery.jpg" alt=""/>
+                <div class="caption">
+                    <p><a href="#" class="btn btn-primary" role="button">进入学习</a></p>
+                </div>
+            </div>
+     </div>
+        <div class="col-md-3 col-sm-6">
+            <div class="thumbnail">
+                <img src="boot-img/jquery.jpg" alt=""/>
+                <div class="caption">
+                    <p><a href="#" class="btn btn-primary" role="button">进入学习</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div class="thumbnail">
+                <img src="boot-img/jquery.jpg" alt=""/>
+                <div class="caption">
+                    <p><a href="#" class="btn btn-primary" role="button">进入学习</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div class="thumbnail">
+                <img src="boot-img/jquery.jpg" alt=""/>
+                <div class="caption">
+                    <p><a href="#" class="btn btn-primary" role="button">进入学习</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div class="thumbnail">
+                <img src="boot-img/jquery.jpg" alt=""/>
+                <div class="caption">
+                    <p><a href="#" class="btn btn-primary" role="button">进入学习</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div class="thumbnail">
+                <img src="boot-img/jquery.jpg" alt=""/>
+                <div class="caption">
+                    <p><a href="#" class="btn btn-primary" role="button">进入学习</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div class="thumbnail">
+                <img src="boot-img/jquery.jpg" alt=""/>
+                <div class="caption">
+                    <p><a href="#" class="btn btn-primary" role="button">进入学习</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div class="thumbnail">
+                <img src="boot-img/jquery.jpg" alt=""/>
+                <div class="caption">
+                    <p><a href="#" class="btn btn-primary" role="button">进入学习</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--第六版-->
+<section id="contact">
+    <div class="mark ptm-70 mengban">
+        <div class="container">
+            <div class="col-md-6">
+                <h2><span class="glyphicon glyphicon-asterisk"></span>联系我们</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur assumenda deserunt dicta, dolores
+                    ipsam ipsum voluptate. Adipisci et nulla odio!</p>
+                <p><span class="glyphicon glyphicon-earphone"></span>tell:0222</p>
+                <p><span class="glyphicon glyphicon-headphones"></span>tell:0222</p>
+                <p><span class="glyphicon glyphicon-asterisk"></span>tell:0222</p>
+            </div>
+            <div class="col-md-6">
+                <div class="col-md-6">
+                    <input type="text" placeholder="姓名">
+                </div>
+                <div class="col-md-6">
+                    <input type="email" placeholder="邮箱">
+                </div>
+                <div class="col-md-12">
+                    <input type="text" placeholder="标题">
+                </div>
+                <div class="col-md-12">
+                    <textarea placeholder="请留言"></textarea>
+                </div>
+                <div class="col-md-12">
+                    <input type="submit" value="提交">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--第七版-->
+<footer class="text-center text-muted" id="footer">
+    <h2>@小狼学院</h2>
+</footer>
+</body>
+</html>

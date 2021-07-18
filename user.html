@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>用户管理系统</title>
+
+    <!-- Bootstrap -->
+    <link href="bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/houtai.css"/>
+    <link rel="stylesheet" href="css/user.css"/>
+
+  <!-- &lt;!&ndash; HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries &ndash;&gt;
+    &lt;!&ndash; WARNING: Respond.js doesn't work if you view the page via file:// &ndash;&gt;
+    &lt;!&ndash;[if lt IE 9]>-->
+    <script src="bootcss/cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="bootcss/cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+
+</head>
+<body>
+
+
+<!-- 导航栏-->
+<nav class="navbar navbar-default navbar-fixed-top"> <!--navbar-fixed-top固定宽度-->
+    <!--响应式容器-->
+    <div class="container">
+        <!--导航条头部 包含折叠按钮,logo-->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-right" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="houtai.html">用户管理系统</a>
+        </div>
+        <!--左边的导航条-->
+        <div class="collapse navbar-collapse" id="nav-right">
+            <ul class="nav navbar-nav">
+                <li><a href="index.html"><span class="glyphicon glyphicon-cloud"></span>后台管理</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-plane"></span>联系我们</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-send"></span>关于我们</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-apple"></span>点我有惊喜</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-question-sign"></span>论坛</a></li>
+                <li><a href="houtai.html"><span class="glyphicon glyphicon-asterisk"></span>后台页面</a></li>
+            </ul>
+            <!--右边导航条-->
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">admin <span class="caret"></span></a>
+                    <!--隐藏的下拉菜单-->
+                    <ul class="dropdown-menu">
+                        <li><a href="#">前台首页</a></li>
+                        <li><a href="#">个人主页</a></li>
+                        <li><a href="#">个人设置</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">个人账户</a></li>
+                        <li><a href="#">我的收藏</a></li>
+                    </ul>
+                </li>
+                <!--导航右边-->
+                <li><a href="#"><span class="glyphicon glyphicon-off"></span>退出</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+ <!-- nav部分-->
+<div class="container nav-01">
+    <div class="row">
+        <!--left-->
+        <div class="col-md-2">
+            <ul class="list-group">
+                <li class="list-group-item active"><a href="#">用户管理</a></li>
+                <li class="list-group-item"><a href="#">用户搜索</a></li>
+                <li class="list-group-item"><a href="#" data-toggle="modal" data-target="#myModal">用户添加</a></li>
+            </ul>
+        </div>
+        <!--right-->
+        <div class="col-md-10">
+            <div class="page-header">
+                <h1>用户管理 <small>Subtext for header</small></h1>
+            </div>
+            <ul class="nav nav-pills">
+                <li role="presentation" class="active"><a href="#">搜索用户</a></li>
+                <li role="presentation"><a href="#">会员管理</a></li>
+                <li role="presentation"><a href="#" data-toggle="modal" data-target="#myModal">用户添加</a></li>
+            </ul>
+            <!--artet-->
+            <div class="alert alert-info" role="alert" style="margin: 10px 0">Heads up! This alert needs your attention, but it's not super important.</div>
+            <form>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">用户名</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">密码</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">用户组</label>
+                <select class="form-control">
+                    <option>普通会员</option>
+                    <option>普通年费会员</option>
+                    <option>超级会员</option>
+                    <option>超级年费会员</option>
+                    <option>年费黑金会员</option>
+                </select>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!--&lt;!&ndash; Button trigger modal &ndash;&gt;-->
+<!--<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">-->
+    <!--Launch demo modal-->
+<!--</button>-->
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h2 class="modal-title" id="myModalLabel">添加用户</h2>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label for="exampleInputEmail01">用户名</label>
+                        <input type="text" class="form-control" id="exampleInputEmail01" placeholder="输入用户名">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword01">请输入密码</label>
+                        <input type="password" class="form-control" id="exampleInputPassword01" placeholder="输入密码">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword02">请再次输入密码</label>
+                        <input type="password" class="form-control" id="exampleInputPassword02" placeholder="确认密码">
+                    </div>
+                    <div class="form-group">
+                        <label for="exail">请输入邮箱</label>
+                        <input type="email" class="form-control" id="exail" placeholder="输入邮箱">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">会员组</label>
+                        <select class="form-control">
+                            <option>普通会员</option>
+                            <option>普通年费会员</option>
+                            <option>超级会员</option>
+                            <option>超级年费会员</option>
+                            <option>年费黑金会员</option>
+                        </select>
+                    </div>
+                    </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                <button type="button" class="btn btn-primary">确认</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--//链接插件-->
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="bootcss/cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+</body>
+</html>
