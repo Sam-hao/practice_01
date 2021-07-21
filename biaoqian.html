@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>标签页面</title>
+
+    <!-- Bootstrap -->
+    <link href="bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/houtai.css"/>
+    <link rel="stylesheet" href="css/user.css"/>
+
+    <!-- &lt;!&ndash; HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries &ndash;&gt;
+      &lt;!&ndash; WARNING: Respond.js doesn't work if you view the page via file:// &ndash;&gt;
+      &lt;!&ndash;[if lt IE 9]>-->
+    <script src="bootcss/cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="bootcss/cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+
+</head>
+<body>
+
+<!-- 导航栏-->
+<nav class="navbar navbar-default navbar-fixed-top"> <!--navbar-fixed-top固定宽度-->
+    <!--响应式容器-->
+    <div class="container">
+        <!--导航条头部 包含折叠按钮,logo-->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-right" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="houtai.html">用户管理系统</a>
+        </div>
+        <!--左边的导航条-->
+        <div class="collapse navbar-collapse" id="nav-right">
+            <ul class="nav navbar-nav">
+                <li><a href="index.html"><span class="glyphicon glyphicon-cloud"></span>后台管理</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-plane"></span>联系我们</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-send"></span>关于我们</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-apple"></span>点我有惊喜</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-question-sign"></span>论坛</a></li>
+                <li><a href="houtai.html"><span class="glyphicon glyphicon-asterisk"></span>后台页面</a></li>
+            </ul>
+            <!--右边导航条-->
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">admin <span class="caret"></span></a>
+                    <!--隐藏的下拉菜单-->
+                    <ul class="dropdown-menu">
+                        <li><a href="#">前台首页</a></li>
+                        <li><a href="#">个人主页</a></li>
+                        <li><a href="#">个人设置</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">个人账户</a></li>
+                        <li><a href="#">我的收藏</a></li>
+                    </ul>
+                </li>
+                <!--导航右边-->
+                <li><a href="#"><span class="glyphicon glyphicon-off"></span>退出</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!--标签页面-->
+<div class="container nav-01">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="page-header">
+                <h1>标签管理 <small>Subtext for header</small></h1>
+            </div>
+            <div class="col-md-10">
+                <div class="form-group">
+                    <input type="email" class="form-control"  placeholder="输入妙趣">
+                </div>
+            </div>
+            <div class="col-md-2">
+                <button type="button" class="btn btn-primary">Primary</button >
+            </div>
+            <!--待警告的狂-->
+            <div class="col-md-3">
+                <div class="alert alert-info alert-dismissible" role="alert">
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <strong>Warning!</strong> Better check yourself, you're not looking too good.
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="alert alert-warning alert-dismissible" role="alert">
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <strong>Warning!</strong> Better check yourself, you're not looking too good.
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="alert alert-danger alert-dismissible" role="alert">
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <strong>Warning!</strong> Better check yourself, you're not looking too good.
+                </div>
+            </div>
+</div>
+        </div>
+    </div>
+
+
+
+<!--//链接插件-->
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="bootcss/cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+</body>
+</html>

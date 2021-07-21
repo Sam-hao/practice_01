@@ -1,0 +1,19 @@
+body{
+  /*  background-color: #DBDBDB;*/
+}
+.nav-01 .row{
+    padding-top: 82px;
+}
+.nav-01 .row a{
+    color: black;
+}
+.nav-01 .row h1{
+    margin: 0;
+    padding: 0;
+    font-size: 25px;
+}
+/*h1*/s
+.page-header{
+    margin: 0 0 15px;
+}
+

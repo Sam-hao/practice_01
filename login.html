@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>注册页面</title>
+
+    <!-- Bootstrap -->
+    <link href="bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/lonin.css"/>
+
+    <script src="bootcss/cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="bootcss/cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <style>
+
+    </style>
+</head>
+<body>
+<div class="all">
+    <ul class="text-center">
+        <li class="current"><a href="#">登录</a></li>
+        <li><a href="#">注册</a></li>
+    </ul>
+    <form action="#">
+        <!--登录-->
+        <div class="denglv">
+            <div class="form-group">
+                <label for="exampleInputEmail1">用户名</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="用户名">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputPassword1">密码</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputPassword002">请再次输入密码</label>
+                <input type="password" class="form-control" id="exampleInputPassword002" placeholder="确认密码">
+            </div>
+        </div>
+        <!--注册-->
+        <div class="zc">
+            <div class="denglv">
+                <div class="form-group">
+                    <label for="exampleInputEmail11">用户名</label>
+                    <input type="email" class="form-control" id="exampleInputEmail11" placeholder="用户名">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword11">密码</label>
+                    <input type="password" class="form-control" id="exampleInputPassword11" placeholder="Password">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword02">请再次输入密码</label>
+                    <input type="password" class="form-control" id="exampleInputPassword02" placeholder="确认密码">
+                </div>
+                <div class="form-group">
+                    <label for="exail">请输入邮箱</label>
+                    <input type="email" class="form-control" id="exail" placeholder="输入邮箱">
+                </div>
+            </div>
+        </div>
+        <button type="button" class="btn btn-primary">确认</button>
+    </form>
+</div>
+
+
+
+<!--//链接插件-->
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery-3.4.1.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script>
+    $('li').click(function(){
+        $(this).addClass('current').siblings('li').removeClass('current');
+        var index=$('li').indent;
+        $('form div').eq(index).show().sibling('div').hide();
+    })
+</script>
+</body>
+</html>
